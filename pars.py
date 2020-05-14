@@ -2,7 +2,7 @@ data={}
 flag = True 
 file = open('conf.txt', 'r')
 for line in file:
-    if line[0] != "#" and line[0] !=';' and line[0] != '\n':
+    if line[0] not in ['#', ';', '\n']:
         list0 = line.split(' ', 1)
             
                 
